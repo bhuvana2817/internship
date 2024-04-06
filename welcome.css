@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img[src="dribbble.svg"] {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.main {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.heading h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+}
+
+.subheading h4 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.text h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.camera {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.camera img {
+    width: 30px;
+    height: 30px;
+}
+
+.files input[type="file"] {
+    display: none;
+}
+
+.choose-default {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.choose-default img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.location {
+    margin-bottom: 30px;
+}
+
+.input-location {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button input[type="button"] {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.button input[type="button"]:hover {
+    background-color: #e64193;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main {
+        padding: 30px;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+    }
+
+    .subheading h4 {
+        font-size: 14px;
+    }
+
+    .text h3 {
+        font-size: 16px;
+    }
+
+    .camera {
+        width: 60px;
+        height: 60px;
+    }
+
+    .camera img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .choose-default {
+        font-size: 12px;
+    }
+
+    .choose-default img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .input-location {
+        font-size: 14px;
+    }
+
+    .button input[type="button"] {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 20px;
+    }
+
+    .heading h1 {
+        font-size: 18px;
+    }
+
+    .subheading h4 {
+        font-size: 12px;
+    }
+
+    .text h3 {
+        font-size: 14px;
+    }
+
+    .camera {
+        width: 50px;
+        height: 50px;
+    }
+
+    .camera img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .choose-default {
+        font-size: 10px;
+    }
+
+    .choose-default img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .input-location {
+        font-size: 12px;
+    }
+
+    .button input[type="button"] {
+        font-size: 12px;
+    }
+}
