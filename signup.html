@@ -4,7 +4,7 @@
 <head>
     <title>Sign up to Dribbble</title>
     <link rel="stylesheet" href="signup.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="authentication.js" defer></script>
 </head>
 
 <body>
@@ -16,9 +16,11 @@
     
     <div class="left">
         <img class="logo" src="assets/dribbble1.svg" alt="">
+        <p><h3>Discover the world's top Designers & Creatives.</h3></p>
         <img class="image" src="assets/background.png" alt="">
     </div>
     <div class="main">
+        <div class="signin">Already a member?<b>sign in</b>.</div>
         <div class="content">
         <h2>Sign up to Dribbble</h2>
         <!-- <p>Username has already been taken</p> -->
@@ -26,11 +28,11 @@
             <div class="input1">
                 <div class="name">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" value="John">
+                    <input type="text" id="name" name="name" >
                 </div>
                 <span class="username">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" value="John">
+                    <input type="text" id="username" name="username" required >
                 </span>
             </div>
             <div class="email">
@@ -50,7 +52,7 @@
             </div>
             
 
-            <button onclick="signup(event)" type="submit">Create Account</button>
+            <button  id="submit" type="submit">Create Account</button>
         </form>
         <p style="color: #A1A1A3;">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
         </p>

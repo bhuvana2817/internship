@@ -1,3 +1,9 @@
+
+
+
+
+
+
 function signup(event){
     event.preventDefault();
     window.location.href="welcome.html";

@@ -27,6 +27,14 @@ body {
     /* border: 1px solid black; */
 }
 
+.left h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 30px;
+    color: #9a6f1f;
+}
+
 .image {
     position: absolute;
     top: 0;
@@ -35,10 +43,22 @@ body {
     height: 100%;
     object-fit: contain;
 }
+
+.signin {
+    position:absolute;
+    transform: translate(400px, -307px);
+    z-index: 10;
+    font-size: 14px;
+}
+
 .main {
+    float: right;
+    width: 60%;
+    position: relative;
     display: flex;
+    flex-direction: column;
     height: 100vh;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background-color: #fff;
     padding: 40px;
@@ -67,13 +87,15 @@ h2 {
     justify-content: space-between;
     flex-basis: 48%;
 }
-.name input,.username input{
-        margin-right: 15px;
-        padding: 10px;
-        border: 1px solid #F3F3F3;
-        background-color: #F3F3F3;
-        border-radius: 5px;
-        font-size: 16px;
+
+.name input,
+.username input {
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid #F3F3F3;
+    background-color: #F3F3F3;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .email,
@@ -112,7 +134,8 @@ input[type="password"] {
     font-size: 14px;
     color: #666;
 }
-.logo{
+
+.logo {
     z-index: 10;
     margin-top: 10px;
     margin-left: 20px;
