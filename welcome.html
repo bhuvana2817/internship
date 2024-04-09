@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="welcome.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
-    <img src="assets/dribbble.svg" alt="">
+    <nav><img src="assets/dribbble.svg" alt=""></nav>
+    
     <div class="main">
         <div class="heading">
             <h1>Welcome! Let's create your profile</h1>
@@ -24,19 +26,21 @@
                 <img src="assets/camera.svg" alt="">
             </div>
             <div class="files">
-                <input type="file" >
+            <input-file></input-file>
+            <label for="file"> <img src="assets/right-arrow.svg" alt="">Or choose one of our defaults </label>
             </div>
-            <div class="choose-default">
+            <!-- <div class="choose-default">
                 <img src="assets/right-arrow.svg" alt="">
                 <h5>Or choose one of our defaults</h5>
-            </div>
+            </div> -->
         </div>
         <div class="text">
             <h3>Add your location</h3>
         </div>
         <div class="location">
-            <input type="text" class="input-location">
+            <input type="text" value="Enter a location" class="input-location" style="border: none; border-bottom: 1px solid #cccccc; outline: none;">
         </div>
+
         <div class="button">
             <input type="button" onclick="welcome(event)" value="Next">
         </div>

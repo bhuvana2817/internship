@@ -259,3 +259,46 @@ function check(event) {
 
 
 // web components end
+
+// input file web component
+
+class inputFile extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML =`
+    <style>
+      label.label input[type="file"] {
+        position: absolute;
+        top: -1000px;
+      }
+      .label {
+        font-weight:700;
+        color:black;
+        cursor: pointer;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        padding: 5px 15px;
+        margin: 15px;
+        background: #fff;
+        display: inline-block;
+      }
+      
+      .label:active {
+        background: #9fa1a0;
+      }
+      .label:invalid + span {
+        color: #000000;
+      }
+      .label:valid + span {
+        color: #ffffff;
+      }
+    </style>
+    <form action="/form/sumbit" method="get">
+      <label class="label">
+        <input type="file" required/>
+        <span>Choose Image</span>
+      </label>
+    </form>`
+    }
+}
+
+customElements.define("input-file",inputFile);
