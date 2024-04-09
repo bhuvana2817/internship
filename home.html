@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="dribbble.svg" alt="">
+            <img src="assets/dribbble.svg" alt="">
         </div>
         <div class="back">
-            <img src="left-arrow.svg" alt="">
+            <img src="assets/left-arrow.svg" alt="">
         </div>
     </nav>
     <div class="main">
         <div class="heading"><h1>What brings you to Dribbble?</h1></div>
         <div class="subheading"><h3>Select the option that best discribes you.Don't worry , you can explore other options later.</h3></div>
         <div class="content">
-            Main content is here as web components.
+            <my-card imglink="assets/main1.png" text="I'm a designer looking to share my work"></my-card>
+            <my-card imglink="assets/main2.png" text="I'm looking to hire a designer"></my-card>
+            <my-card imglink="assets/main3.png" text="I'm looking for design Inspiration"></my-card>
         </div>
         <div class="text">
             <h3>Anything else? You can select Multiple</h3>
         </div>
         <div class="button">
-            <input type="button" value="Finish">
+            <input type="button" onclick="home(event)" value="Finish">
         </div>
-        <div class="return"><h5>Or press return</h5></div>
+        <div id="return"></div>
     </div>
 </body>
 </html>
