@@ -37,7 +37,7 @@ submit.addEventListener("click", function (event) {
             // ...
         })
         .catch((error) => {
-            // window.location.href = "welcome.html"
+            window.location.href = "welcome.html"
             const errorCode = error.code;
             const errorMessage = error.message;
             alert("Enter All details")
