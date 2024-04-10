@@ -40,7 +40,7 @@ submit.addEventListener("click", function (event) {
             window.location.href = "welcome.html"
             const errorCode = error.code;
             const errorMessage = error.message;
-            alert("Enter All details")
+            // alert("Enter All details")
 
             // ..
         });
