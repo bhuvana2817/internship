@@ -54,7 +54,7 @@ body {
 .main {
     float: right;
     width: 60%;
-    position: relative;
+    position: inherit;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -67,7 +67,7 @@ body {
 }
 
 .content {
-    max-width: 400px;
+   max-width: min-content;
     margin: 0 auto;
 }
 
@@ -101,6 +101,7 @@ h2 {
 .email,
 .password {
     margin-bottom: 20px;
+    flex-basis: 50%;
 }
 
 label {
@@ -168,25 +169,35 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
-    .whole {
-        flex-direction: column;
-        height: auto;
-    }
-
+@media (max-width: 800px) {
+    body {
+            
+            background-color: #fff;
+        }
     .left {
-        flex: 0 0 auto;
-        padding: 20px;
-    }
-
+            position: relative;
+            float: left;
+            width: 0%;
+            height: 0vh;
+            overflow: hidden;
+            background-color: #F3D186;
+            /* border: 1px solid black; */
+        }
     .main {
-        flex: 0 0 auto;
-        padding: 20px;
-    }
+            float: right;
+            width: 100%;
+            position: inherit;
+                display: inline-grid;
+            flex-direction: column;
+            height: 120vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+           
+        }
 
-    .content {
-        max-width: 100%;
-    }
+   
 }
 
 @media (max-width: 768px) {
@@ -202,9 +213,33 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .main {
-        padding: 20px 10px;
-    }
+    body {
+            
+            background-color: #fff;
+        }
+    .left {
+            position: relative;
+            float: left;
+            width: 0%;
+            height: 0vh;
+            overflow: hidden;
+            background-color: #F3D186;
+            /* border: 1px solid black; */
+        }
+    
+        .main {
+            float: right;
+            width: 100%;
+            position: inherit;
+            display: inline-grid;
+            flex-direction: column;
+            height: 120vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+    
+        }
 
     .argree p {
         font-size: 12px;

@@ -193,8 +193,10 @@ footer {
 /* Responsive Styles */
 @media (max-width: 768px) {
     header {
-        padding: 10px;
-    }
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
 
     .logo img {
         width: 80px;
@@ -258,7 +260,11 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
     .logo img {
         width: 60px;
     }
